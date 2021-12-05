@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General View">
+        <menu>
+            <item
+                android:id="@+id/files"
+                android:icon="@drawable/ic_baseline_insert_drive_file_24"
+                android:title="Files" />
+            <item
+                android:id="@+id/images"
+                android:icon="@drawable/ic_baseline_image_24"
+                android:title="Images"/>
+            <item
+                android:id="@+id/notes"
+                android:icon="@drawable/ic_baseline_event_note_24"
+                android:title="Notes" />
+        </menu>
+    </item>
+
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_vpn_key_24"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

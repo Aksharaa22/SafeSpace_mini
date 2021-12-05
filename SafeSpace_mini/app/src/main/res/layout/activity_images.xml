@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Images">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/firebaseimage"
+        android:layout_width="367dp"
+        android:layout_height="340dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectImagebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectImagebtn"
+        android:layout_width="234dp"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Select Image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTintMode="src_over"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_baseline_add_photo_alternate_24"
+        app:iconGravity="textStart"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadImagebtn"
+        android:layout_width="235dp"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Upload Image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:backgroundTintMode="src_over"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/ic_baseline_upgrade_24"
+        app:iconGravity="textStart"
+
+        app:layout_constraintVertical_bias="0.88" />
+
+    <EditText
+        android:id="@+id/imagename"
+        android:layout_width="238dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Enter image name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firebaseimage"
+        app:layout_constraintVertical_bias="0.193" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
