@@ -1,4 +1,4 @@
-# SafeSpace_mini
+# SafeSpace App
 Front End Development – Android Studio 2020 3.1
 Backend Development – Firebase Store 24.0.0, Firebase Storage
 20.0.0
